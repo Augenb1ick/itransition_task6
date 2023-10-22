@@ -1,0 +1,56 @@
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.board-canvas {
+    border: 1px solid #ccc;
+    cursor: url(../../icons/circle.svg), auto;
+    border-radius: 10px;
+}
+
+.board-title {
+    margin: 5px 0;
+    user-select: none;
+}
+
+.instruments-panel {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10px;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.pick-color-text {
+    margin: 0;
+    font-size: 15px;
+}
+
+.pick-color {
+    border: none;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border-radius: 100%;
+}
+
+.undo-btn {
+    background: none;
+    border: none;
+    height: 43px;
+    background-position: center;
+    background-size: cover;
+}
