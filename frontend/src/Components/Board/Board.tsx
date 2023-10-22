@@ -12,6 +12,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 import { handleSaveImage } from '../../utills/downloadImage';
 import DownloadIcon from '@mui/icons-material/Download';
+import SaveIcon from '@mui/icons-material/Save';
 
 interface BoardProps {
     boardId: string;
@@ -111,6 +112,11 @@ const Board: React.FC<BoardProps> = ({ boardId }) => {
                     onClick={handleBackClick}
                     sx={{ zIndex: 3, color: 'black', padding: '0', margin: 0, minWidth: '30px', maxHeight: '30px', position: 'absolute', top: '15px', left: '15px' }}>
                     <ArrowBackIcon />
+                </Button>
+                <Button
+                    onClick={handleSaveBoard}
+                    sx={{ zIndex: 3, color: '05887B', padding: '0', margin: 0, minWidth: '30px', maxHeight: '30px', position: 'absolute', top: '15px', right: '15px' }}>
+                    <SaveIcon />
                 </Button>
                 <h1 className='board-title'>{`${boardId}'s board`}</h1>
                 <canvas
